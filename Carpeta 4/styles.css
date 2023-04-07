@@ -3,6 +3,47 @@
     padding: 0;
 }
 
-.titulo{
-    color: blue;
+/* NAVEGADOR */
+
+.navegador{
+    background-color: orangered;
 }
+
+.navegador .items {
+    color:whitesmoke;
+    font-weight: bold;
+  }
+
+  .navegador .navbar-brand {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 25px;
+  }
+
+
+/* MAIN */
+.container-main {
+    height: 100vh;
+    min-height:500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+/* FOOTER */
+footer {
+    background-color: #303030;
+    color: white;
+    padding: 10px;
+  }
+  
+footer .footer-flex {
+display: flex;
+justify-content: center;
+}
+  
+footer h4{
+      font-size: 20px;
+    }
