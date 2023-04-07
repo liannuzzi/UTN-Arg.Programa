@@ -6,4 +6,4 @@ const boton=document.getElementById('boton')
 
 boton.onclick=()=>{
     titulo.textContent="Hiciste click"
-}
+}   
