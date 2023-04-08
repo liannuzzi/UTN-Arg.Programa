@@ -32,6 +32,58 @@
   }
 
 
+  /* FORMULARIO CARGA DE DATOS */
+
+
+#containerForm{
+  margin-left: 65vh;
+  margin-right: 50vh;
+  margin-top: 10vh;
+  border: solid 2px orangered ;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: solid 2px black;
+  background-color:whitesmoke;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  }
+  
+.label-container {
+text-align: left;
+}
+
+.form-label {
+font-weight: bold;
+margin-left: 10px;
+}
+
+.form-control{
+border: 1px solid black;
+border-radius: 0%;
+}
+
+.container-botones {
+display: flex;
+justify-content: center;
+gap: 40px;
+margin-top: 70px;
+}
+
+.container-botones .boton {
+background-color: #0A3A64;
+border: solid 1px orangered;
+font-weight: bold;
+border-radius: 0%;
+}
+
+.container-botones .boton:hover {
+color: whitesmoke;
+background-color: #2A5376;
+}
+
+
 /* FOOTER */
 footer {
     background-color: #303030;

@@ -11,6 +11,9 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <title>SportGym-Contactanos</title>
   </head>
   <body>
@@ -65,8 +68,61 @@
       <div class="container-main">
         <!--  Escribir el codigo aqui dentro para no afectar el resto de la pagina -->
 
-        <h1 id="titulo">Pagina de Contactanos</h1>
-        <p>Escribi codigo aqui</p>
+        <div id="containerForm" class="col-md-3">
+          <form id="formContactenos">
+              <fieldset id="fieldsetForm">
+                  <div id="containerPasajeros" class="label-container mb-3 mx-2">
+                      <label for="" class="form-label">Ingrese su nombre y apellido</label>
+                      <input id="nombre" name="name" type="text" class="form-control" placeholder="Nombre y apellido" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div id="containerTelefono" class="label-container mb-3 mx-2">
+                    <label for="" class="form-label">Ingrese su numero telefono</label>
+                    <input id="telefono" name="telefono" type="number" class="form-control" placeholder="Telefono" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div id="containerCorreo" class="label-container mb-3 mx-2">
+                    <label for="" class="form-label">Ingrese su correo electronico</label>
+                    <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@gmail.com">
+                  </div>
+                  <div id="containerConsulta" class="label-container mb-3 mx-2">
+                    <label for="" class="form-label">Ingrese su consulta/reclamo:</label>
+                    <textarea class="form-control" name="consulta" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="container-botones">
+                    <button id="btnEnviarForm" type="button" class="boton btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Enviar
+                    </button>
+                      <button type="reset" class="boton btn btn-primary mb-3">Limpiar</button>
+                  </div>
+              </fieldset>
+          </form>
+      </div>
+      <div id="containerHome" class="col-md-9">
+          <ul id="listado" >
+          </ul>             
+      </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Muchas gracias</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Hemos recibido su consulta/reclamo con éxito. En caso que desee generar un resumen del reclamo/consulta generado en formato PDF, haga click en "Exportar PDF". De lo contrario, haga click en "Cerrar"
+          </div>
+          <div class="modal-footer">
+            <button id="btnCerrar" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button id="btnGenerarPdf" type="button" class="btn btn-primary">Exportar PDF</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
 
         <!-- No escribir codigo por debajo de esta linea -->
       </div>
@@ -84,5 +140,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    
   </body>
 </html>
