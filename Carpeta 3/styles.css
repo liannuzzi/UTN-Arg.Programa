@@ -30,11 +30,27 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-
+  h1{ font-style:italic;
+    margin-left: 16cm ;
+    color:orange}
+h2{ background-color: orangered;
+    margin-left: 0cm;
+    color: whitesmoke;   
+}
+li{font-weight: bolder;
+    margin-left: 1cm;
+    color: black}
+label{font-weight: bolder;
+    margin-left: 15cm;
+    color:orangered}
+button{font-weight: bold ;
+margin-left: 18cm;}
+p{font-weight: bold;
+    color: black;}
 
 /* FOOTER */
 footer {
-    background-color: #303030;
+    background-color: white;
     color: white;
     padding: 10px;
   }

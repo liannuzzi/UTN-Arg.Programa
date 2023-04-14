@@ -64,10 +64,121 @@
     <main>
       <div class="container-main">
         <!--  Escribir el codigo aqui dentro para no afectar el resto de la pagina -->
+        <header>
+          <h1>SportGym</h1>
+          <nav>
+            <ul>
+              <li><a href="#actividades">Actividades</a></li>
+              <li><a href="#precio">Promos</a></li>
 
-        <h1 id="titulo">Pagina de Cotizador</h1>
-        <p>Escribi codigo aqui</p>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <section id="actividades">
+            <h2>Actividades</h2>
+            <ul>
+              <li>Yoga </li>
+              <li>Pilates</li>
+              <li>Spinning </li>
+              <li>Musculación</li>
+              <li>Kickboxing recreativo</li>
+              <li>Boxeo </li>
+              <li>Libre</li>
+            </ul>
+          </section>
+          <section id="precio">
+            <h2>Promos!!</h2>
+            <p>Conoce nuestras promociones apartir de 2 actividades</p>
+            <p>Y si te sumas con amigos, disfruta de un %5 más de descuento en cada PLAN!</p>
+            <ul>
+              <li>Dos actividades</li>
+              <ul>
+                <li>Un mes - $11.500 </li>
+                <li>3 Meses - $56.000</li>
+                <li>COMBO ABONO SEMESTRAL - $105.000</li>
+              </ul>
+              <li>Libre</li>
+              <ul>
+                <li>Un mes - $13.000 </li>
+                <li>3 Meses - $65.000</li>
+                <li>COMBO ABONO SEMESTRAL - $120.000</li>
+              </ul>
+            </ul>
+            <title>Calculo de costos</title>
+	<script>
+		function calculateCost() {
+			// seleccion de meses y cantidad de actividades
+			var duration = document.getElementById("duration").value;
+			var type = document.getElementById("type").value;
 
+			// Calcular costos por meses de actividad
+			var cost;
+			if (type == "1") {
+				if (duration == "1") {
+					cost = 9900;
+				} else if (duration == "6") {
+					cost = 47940;
+				} else if (duration == "12") {
+					cost = 83880;
+				}
+			} else if (type == "2") {
+				if (duration == "1") {
+					cost = 11500;
+				} else if (duration == "6") {
+					cost = 56000;
+				} else if (duration == "12") {
+					cost = 105000;
+				}
+			} else if (type == "3") {
+				if (duration == "1") {
+					cost = 13000;
+				} else if (duration == "6") {
+					cost = 65000;
+				} else if (duration == "12") {
+					cost = 120000;
+				}
+			}
+
+			// aplicar un 5%de descuento por persona extra
+			var persons = parseInt(document.getElementById("persons").value);
+			if (!isNaN(persons) && persons > 1) {
+				var discount = cost * 0.05 * persons;
+				cost -= discount;
+			}
+
+			// Calcular
+			document.getElementById("cost").innerHTML = "Cost: $" + cost.toFixed(2);
+		}
+	</script>
+<body>
+	<h2>Consulte precios!</h1>
+	<p>
+		<label for="duration">Meses:</label>
+		<select id="duration">
+			<option value="1">1 mes</option>
+			<option value="6">6 meses</option>
+			<option value="12">12 meses</option>
+		</select>
+	</p>
+	<p>
+		<label for="type">Pase por:</label>
+		<select id="type">
+			<option value="1">1 actividad</option>
+			<option value="2">2 actividades</option>
+			<option value="3">Libre</option>
+		</select>
+	</p>
+	<p>
+		<label for="persons">Cantidad de personas</label>
+		<input type="number" id="persons" min="0" value="0">
+	</p>
+	<p><button onclick="calculateCost()">calcular costos:</button></p>
+	<p id="cost"></p>
+</body>
+</html>
+          </section>
+            <link rel="stylesheet" href="style.css"
         <!-- No escribir codigo por debajo de esta linea -->
       </div>
     </main>
