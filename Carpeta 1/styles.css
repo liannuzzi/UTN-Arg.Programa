@@ -79,9 +79,9 @@ h2{
   -webkit-text-stroke: 1px white;
   padding: 10px;
 }
-.div2{
- background-color: black;
- display: flex;
+.div2 {
+ background-color: orangered;
+ background-size: cover;
  
 }
 .container-options{
