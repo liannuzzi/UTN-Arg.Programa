@@ -50,44 +50,70 @@ footer h4{
       font-size: 20px;
     }
 
-    h1 {
-      font-weight: bold;
-      font-size: 30px;
-      font-weight: bond;
-      letter-spacing:2px ;
-      border: 30px;
-      padding: 20px;
-   }
-   #header img {
-    width: 80px ;
-    height: 80px;
-    float: right; 
-    padding: 20px 20px 50px 20px;
-  }
-  #header ul a {
-    text-decoration: none;
-  
-  } 
-  
-  #content 
-  {	
-    background: blanchedalmond;
-    font-weight: bold;
-    
-  }
-  #content p1 {
-    display: flex;
-    float: left;
-    background:blanchedalmond;
-    
-  }
-  .img {
-    float: right;
-    background:blanchedalmond;
-    margin-left: 10px ;
-    padding: 20px 20px 20px 20px;
-  } 
-  .container-main {
-    background: blanchedalmond;
-  }
+/*--- inicio--*/
+ 
+ 
+.content{
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 75px;
+  background-image: url(https://s3.abcstatics.com/media/bienestar/2021/09/09/ENTRENAMIENTO-ku9E--620x349@abc.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
 		
+   h1{
+    font-family: fantasy;
+    -webkit-text-stroke: 1px white;
+   }
+p{
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke: 0.7px black;
+  
+}
+h2{
+  -webkit-text-stroke: 1px white;
+  padding: 10px;
+}
+.div2{
+ background-color: black;
+ display: flex;
+ 
+}
+.container-options{
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+
+}
+.container-options .options{
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2 );
+  overflow: hidden;
+  margin: 50px;
+  text-align: center;
+  transition: all 0.25s ;
+}
+.container-options .options:hover{
+  transform: translateY(-15px);
+  box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
+}
+.container-options .options img{
+  width: 330px;
+  height: 420px;
+
+}
+
+.container-options .options a{
+  text-decoration: none;
+}
