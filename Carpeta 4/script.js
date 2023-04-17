@@ -55,7 +55,7 @@ $(document).ready(function() {
   });
 
   $('#btnCerrar').click(()=>{
-    window.location.href="../Carpeta 1/index.html"
+    window.location.href="../index.html"
   })
 
   $('#btnGenerarPdf').click(()=>{
